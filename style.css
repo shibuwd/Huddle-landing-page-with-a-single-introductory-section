@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+--violet: hsl(257, 40%, 49%);
+--soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1rem;
+   background-color: var(--violet);
+   height: 100vh;
+   padding: 1rem 2.1rem;
+   background-image: url(./img/bg-mobile.svg);
+   background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* card section */
+
+nav .logo img {
+    transform: scale(.5);
+    margin-left: -4rem;
+}
+
+main  .hero-img {
+    transform: scale();
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 2.2rem;
+}
+
+.content-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    margin-top: 4rem; 
+
+}
+
+.content-text p {
+    text-align: center;
+    line-height: 1.5rem;
+    color: white;
+    margin-top: .8rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.4rem;
+ 
+    
+}
+
+ .content-text .btn a  {
+    background-color: white;
+    padding: .8rem  5rem;
+    border-radius: 2rem;
+    text-align: center;
+    color: var(--violet);
+    cursor: pointer;
+    text-decoration: none;
+   -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24); 
+   box-shadow: 5px 5px 15px 5px rgba(50, 41, 51, 0.24);
+   transition: all .3s ease-in;
+}
+
+.content-text .btn a:hover  {
+    background: var(--soft-magenta);
+    color: white;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons i  {
+    color: white;
+    height: 50px;
+    width: 50px;
+    transform: scale(.8);
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: all .3s ease-in-out;
+}
+
+.social-icons i:hover {
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
+
+/* end card section */
+
+/* attribution section */
+   .attribution {
+     font-size: 11px;
+     text-align: center;
+     padding: 1rem 0;
+     margin-top: 1rem;
+ }
+    
+     .attribution a { 
+    color: hsl(220, 30%, 96%); 
+}
+/* end attribution */
+
+/* media query */
+@media only screen and (min-width: 768px) {
+    body {
+        background: url(./img/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: var(--violet);
+}
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem 2rem;
+}
+    nav .logo {
+    padding: 1rem 2rem;
+    margin-bottom: -3rem;
+}
+    main  .hero-img  {
+        margin-bottom: 1rem;
+        transform: scale(.9);
+}
+   .content-text h1 {
+    padding: 0 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.content-text p {
+    text-align: center;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    padding: 0 3rem;
+}
+}
+
+@media only screen and (min-width: 1366px) {
+       body {
+        background: url(./img/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-color: var(--violet);   
+}
+     .container {
+     flex-direction: row;
+}
+    nav .logo img {
+     padding-right: 9rem;
+}
+
+.content-text {
+    flex: 1 0 50%;
+
+}
+   .content-text h1 {
+       text-align: left;
+}
+.content-text p {
+    text-align: left;
+    line-height: 1.5rem;
+}
+ .btn {
+    margin-left: -18rem;
+}
+.social-icons {
+   margin-left: 60rem;
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        margin-top: 10rem;
+ }
+    nav .logo img {
+    transform: scale(1);
+    margin-top: 3rem;
+ }
+
+}
+}
