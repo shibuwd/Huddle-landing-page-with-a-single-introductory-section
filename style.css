@@ -15,7 +15,6 @@ body {
    font-family: 'Open Sans', sans-serif;
    font-size: 1rem;
    background-color: var(--violet);
-   height: 100vh;
    padding: 0rem 2.1rem;
    background-image: url(./img/bg-mobile.svg);
    background-repeat: no-repeat;
@@ -121,7 +120,7 @@ main  .hero-img {
      font-size: 11px;
      text-align: center;
      padding: 1rem 0;
-     margin-top: -3rem;
+     margin-top: 2rem;
  }
     
      .attribution a { 
@@ -180,7 +179,6 @@ main  .hero-img {
 
 .content-text {
     flex: 1 0 45%;
-
 }
    .content-text h1 {
        text-align: left;
@@ -190,14 +188,17 @@ main  .hero-img {
     line-height: 1.5rem;
 }
  .btn {
-    margin-left: -18rem;
+    margin-left: -15rem;
 }
 .social-icons {
    display: flex;
-   align-items: center;
+   align-items: flex-end;
    justify-content: flex-end;
    margin-top: -3.5rem;
 }
+ .attribution {
+     margin-top: -2rem;
+ }
 
 @media only screen and (min-width: 1440px) {
     .container {
