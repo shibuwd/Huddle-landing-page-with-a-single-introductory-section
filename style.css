@@ -66,9 +66,7 @@ main  .hero-img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1.4rem;
- 
-    
+    margin-top: 1.4rem;  
 }
 
  .content-text .btn a  {
